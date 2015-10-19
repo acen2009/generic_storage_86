@@ -190,7 +190,7 @@
 /----------------------------------------------------------------------------*/
 #if defined(__AVR__) || defined(memcpy_P)
 #include <avr/pgmspace.h>
-#if !defined(ARDUINO_ARCH_SAM)
+#if !defined(ARDUINO_ARCH_SAM) && !defined (_86DUINO)
 #include <avr/io.h>
 #else
 // First, we define missing stuff that we need for demos.
